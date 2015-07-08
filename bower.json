@@ -1,0 +1,25 @@
+{
+  "name": "Challenge",
+  "version": "0.0.1",
+  "authors": [
+    "Andrey Starkov <im@andreystarkov.ru>"
+  ],
+  "directory": "~/src/libs",
+  "dependencies": {
+    "jquery": "latest",
+    "less.js": "latest",
+    "wow.js": "latest",
+    "modernizr": "latest",
+    "font-awesome": "latest",
+    "animate.css": "latest",
+    "skel": "latest",
+    "tooltipster": "latest",
+    "slick.js": "latest",
+    "owl-carousel": "latest",
+    "skidding--dragdealer": "latest",
+    "jquery.transit": "latest",
+    "jquery-validation": "~1.13.1"
+  },
+  "main": "src/index.html",
+  "license": "MIT"
+}

@@ -1,0 +1,408 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Твой вызов</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Твой Вызов">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="img/fav.png" />
+        <link href="css/all.css" rel="stylesheet">
+        <script src="libs/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+
+        <!-- модалы -->
+
+        <div class="md-modal md-effect-3" id="modal-adv">
+            <div class="md-content">
+                <h3>Реклама в проекте <div class="md-close icon-close"></div></h3>
+                <p>Есть желание рекламироваться в проекте - оставьте заявку! Мы с Вами свяжемся и обсудим возможные варианты</p>
+                <div class="input">
+                    <span class="label">Представьтесь, пожалуйста</span>
+                    <input type="text" name="name">
+                </div>
+                <div class="input">
+                    <span class="label">Укажите номер телефона, чтобы мы перезвонили</span>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="input">
+                    <span class="label">Комментарий</span>
+                    <textarea name="text">
+                    </textarea>
+                </div>
+                <div class="input submit">
+                    <div class="button-submit">Сохранить изменения</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Авторизация -->
+        <div class="md-modal md-effect-3 md-auth" id="modal-auth">
+            <div class="md-content">
+                <div class="md-close icon-close"></div>
+                <div class="logo"></div>
+                <div class="info">Войдите в свой аккаунт или зарегистрируйте новый, чтобы принимать и бросать вызовы другим участникам</div>
+                <div class="vk-login">
+                    <i class="icon"></i>
+                    <span>Войти через Вконтакте</span>
+                </div>
+                <div class="fb-login">
+                    <i class="icon"></i>
+                    <span>Войти через Facebook</span>
+                </div>
+                <div class="or">или</div>
+                <div class="input">
+                    <input type="text" name="auth-email" placeholder="Укажите E-Mail" />
+                </div>
+                <div class="input">
+                    <input type="password" name="auth-password" placeholder="Пароль" />
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="accept" id="accept" />
+                    <label for="accept">Я прочитал и принимаю <a href="#">условия сервиса</a></label>
+                </div>
+                <div class="input submit">
+                    <div class="button-square red">Войти или зарегистрироваться</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- верхнее меню -->
+
+        <header class="menu-top" id="menu-top">
+            <div class="container">
+                <div class="logo"></div>
+                <nav class="top-menu">
+                    <a href="#">О проекте</a>
+                    <a href="#">Участники</a>
+                    <a href="#">Вызовы</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Благотворительность</a>
+                </nav>
+                <div class="right">
+                    <a href="#">Магазин</a>
+                    <a class="button button-enter md-trigger" id="signup" data-modal="modal-auth" rel="nofollow">Войти</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="header-image" style="background-image:url(img/samples/header.jpg);">
+            <div class="overlay">
+                <div class="container info">
+                    <h2>Уже <b>110 547</b> участников показали всему миру на что они способны! Сможешь ли и ты доказать, что ты не хуже?</h2>
+
+                    <div class="buttons">
+                        <a class="button button-white active-red" href="#">Я принимаю вызов</a>
+                        <a class="button button-white" href="#">Создать своё испытание</a>
+                    </div>
+
+                    <a class="watch anchor" href="#catalog">
+                        <i class="icon icon-big-arrows"></i>
+                        <span>Смотреть доступные вызовы</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция вызовов -->
+
+        <section class="content challenge-catalog" id="catalog">
+            <div class="container">
+
+                <header>
+                    <div class="row top">
+                        <div class="4u">
+                            <h2>Каталог вызовов</h2>
+                        </div>
+                        <div class="8u search">
+                            <input type="text" name="search" placeholder="Поиск">
+                            <i class="icon-search"></i>
+                        </div>
+                    </div>
+
+                    <div class="types">
+                        <a href="#">Все вызовы <span class="count">13</span></a>
+                        <a href="#"><i class="icon icon-award"></i> Призовые вызовы <span class="count">88</span></a>
+                        <a href="#" class="active"><i class="icon fa fa-heartbeat"></i> Спорт и здоровье <span class="count">84</span></a>
+                        <a href="#"><i class="icon icon-flag-filled"></i> Патриотические <span class="count">23</span></a>
+                        <a href="#"><i class="icon icon-tree"></i> Экология <span class="count">45</span></a>
+                        <a href="#"><i class="icon icon-cap"></i> Обучение <span class="count">84</span></a>
+                    </div>
+
+                    <div class="filter">
+                        <span>Фильтровать по</span>
+                        <a class="active" href="#">Просмотры</a>
+                        <a href="#">Количество лайков</a>
+                        <a href="#">Дата</a>
+                        <a href="#">Сложность: легкая</a>
+                    </div>
+
+                </header>
+
+                <!-- Сетка вызовов -->
+
+                <div class="list" id="challenge-list">
+                    <div class="row">
+                        <div class="3u item">
+                            <div class="md-trigger image" id="test" data-modal="modal-video-1" rel="nofollow">
+                                <img src="img/samples/item-1.jpg" alt="...">
+                                <div class="status prize"><span><i class="icon-cup"></i>Призовой вызов</span></div>
+                            </div>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>251</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level none"></i>
+                                    <span>2/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="3u item">
+                            <div class="md-trigger image" id="test1" data-modal="modal-video-1" rel="nofollow">
+                                <img src="img/samples/item-2.jpg" alt="...">
+                                <div class="status done"><span><i class="icon-cup"></i>Приз выдан</span></div>
+                            </div>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                Выполнить 45 подтягиваний за 2 что подбородки «появились» минуты широким хватом без раскачки
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>14</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level easy"></i>
+                                    <span>4/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="3u item">
+                            <a href="#" class="image">
+                                <img src="img/samples/item-3.jpg" alt="...">
+
+                            </a>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                3 дроп 8-8-8 за 60 секунд. Кто больше??
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level normal"></i>
+                                    <span>5/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="3u item">
+                            <a href="#" class="image">
+                                <img src="img/samples/item-4.jpg" alt="...">
+                            </a>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                Упавший беспилотник окружила группа обезьян. однако камера продолжала работать.
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level hard"></i>
+                                    <span>9/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="3u item">
+                            <a href="#" class="image">
+                                <img src="img/samples/item-3.jpg" alt="...">
+                                <div class="status prize"><span><i class="icon-cup"></i>Призовой вызов</span></div>
+                            </a>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                Ученые что подбородки «появились» уверены, что подбородки «появились» исключительно
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level none"></i>
+                                    <span>2/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="3u item">
+                            <a href="#" class="image">
+                                <img src="img/samples/item-1.jpg" alt="...">
+                                <div class="status done"><span><i class="icon-cup"></i>Приз выдан</span></div>
+                            </a>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                Выполнить 45 подтягиваний за  подтягиваний за 2 минуты без раскачки
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level easy"></i>
+                                    <span>4/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="3u item">
+                            <a href="#" class="image">
+                                <img src="img/samples/item-4.jpg" alt="...">
+                            </a>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                3 дроп 8-8-8 за 60 секунд. Кто больше??
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level normal"></i>
+                                    <span>5/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="3u item">
+                            <a href="#" class="image">
+                                <img src="img/samples/item-2.jpg" alt="...">
+                            </a>
+                            <div class="author">
+                                <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                                <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                            </div>
+                            <div class="caption">
+                                Упавший беспилотник окружила группа обезьян. Аппарат вызов разломали, однако создал продолжала работать.
+                            </div>
+                            <div class="option-icons">
+                                <div class="option users">
+                                    <i class="icon fa fa-users icon-users"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="option level">
+                                    <i class="icon icon-level normal"></i>
+                                    <span>5/10</span>
+                                </div>
+                                <div class="option likes">
+                                    <i class="icon fa fa-heart icon-like"></i>
+                                    <span>58</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container align-center">
+                    <div id="load-more-challenge" class="button button-more" href="#">Загрузить ещё 12</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="logo"></div>
+                <nav>
+                    <a href="#">Конфидециальность</a>
+                    <a href="#">Условия</a>
+                    <a href="#footer" class="md-trigger" data-modal="modal-adv">Реклама в проекте</a>
+                    <div class="lang">
+                        <img class="image" src="img/lang/ru.png" alt="..."><span>Русский</span>
+                    </div>
+                </nav>
+                <div class="banners">
+                    <a href="#"><img src="img/logo-dg.png" alt="..."></a>
+                    <a href="#"><img src="img/logo-redtie.png" alt="..."></a>
+                <div>
+            </div>
+        </footer>
+
+        <div class="md-overlay"></div>
+
+        <script src="js/all.js"></script>
+
+        <script>
+            var totalPages = 5; // количество доступных для вывода страниц
+        </script>
+
+    </body>
+</html>

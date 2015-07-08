@@ -1,0 +1,993 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Твой вызов</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Твой Вызов">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="img/fav.png" />
+        <link href="css/all.css" rel="stylesheet">
+        <script src="libs/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+
+
+        <!-- верхнее меню -->
+
+        <header class="menu-top" id="menu-top">
+            <div class="container">
+                <div class="logo"></div>
+                <nav class="top-menu">
+                    <a href="#" class="md-trigger" data-modal="modal-call-to-challenge">О проекте</a>
+                    <a href="#">Участники</a>
+                    <a href="#">Вызовы</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Благотворительность</a>
+                </nav>
+                <div class="user-current">
+	                <div class="user-menu">
+	                    <div class="dropdown">
+	                    	<div class="flag"> </div>
+		                    <ul>
+		                        <li><a data-modal="modal-profile-settings" class="md-trigger" href="#">Настройки профиля</a></li>
+		                        <li><a href="#">Выход</a></li>
+		                    </ul>
+	                    </div>
+	                    <div class="avatar" style="background-image:url(img/samples/user.jpg)"> </div>
+	                    <span>Марк Руффало</span>
+	                </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="header-profile" class="header-image header-profile" style="background-image:url(img/samples/header-profile.jpg);">
+            <div class="overlay">
+                <div class="container user">
+                    <div class="avatar" style="background-image: url(img/samples/avatar.png)">
+
+                    </div>
+                    <div class="about">
+                        <div class="head">
+                            <b>Роберт Дауни Младший<span class="online">online</span></b>
+                            <span class="desc">45 лет, Калифорния</span>
+                        </div>
+                        <div class="overview">
+                            <span class="done"><i class="icon icon-cup"></i> Выполнил 645 вызовов</span>
+                            <span class="likes"><i class="icon fa fa-heart icon-like"></i> Собрал 1298 лайков</span>
+                            <span class="created"><i class="icon fa fa-rocket"></i> Создал 5 вызовов</span>
+                        </div>
+                        <div class="buttons">
+                            <div id="button-create-challenge" data-modal="modal-create" class="button-square red md-trigger">Создать вызов</div>
+                            <div id="button-incoming-calls" class="button-square white">Входящие вызовы: 23<span class="count">23</span></div>
+                        </div>
+                    </div>
+                    <div class="settings">
+                        <div id="button-settings" data-modal="modal-profile-settings" class="button-square bold md-trigger">
+                            <i class="fa fa-cog"></i><span>Настройки профиля</span>
+                        </div>
+                        <div id="button-settings" class="button-square bold">
+                            <i class="fa fa-picture-o"></i><span>Изменить фон</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Карусель вызовов-->
+
+        <section class="content part profile-notices" id="profile-notices">
+
+            <div class="container relative">
+                <h2>Уведомления</h2>
+
+                <div id="carousel-notice" class="carousel carousel-challenge carousel-notice">
+
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 35%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 45%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <div class="failed"><i class="fa fa-frown-o"></i> Вы провалили этот вызов</div>
+                            <div class="button-square donate">Пожертвовать на благотворительность</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 75%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 30%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 65%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 55%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 80%"> </div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                </div> <!-- carousel -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Карусель созданных выховов -->
+
+        <section class="content part profile-yours profile-notices" id="profile-yours">
+
+            <div class="container relative">
+                <h2>Созданные вызовы</h2>
+
+                <div id="carousel-yours" class="carousel carousel-challenge carousel-yours">
+
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="author">
+                            <div class="avatar"><img src="img/samples/avatar.jpg" alt="..."></div>
+                            <a class="name" href="#">Черная вдова</a><span>создал вызов 3 мар 2015</span>
+                        </div>
+                        <div class="caption">
+                            Ученые уверены, что подбородки «появились» исключительно вследствие уменьшения лиц
+                        </div>
+                        <div class="option-icons passive">
+                            <div class="option users">
+                                <i class="icon fa fa-users icon-users"></i>
+                                <span>251</span>
+                            </div>
+                            <div class="option level">
+                                <i class="icon icon-level none"></i>
+                                <span>2/10</span>
+                            </div>
+                            <div class="option likes">
+                                <i class="icon fa fa-heart icon-like"></i>
+                                <span>58</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- carousel -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Карусель созданных выховов -->
+
+        <section class="content part profile-notices" id="profile-feed">
+
+            <div class="container relative">
+                <h2>Лента активности</h2>
+
+                <div id="carousel-feed" class="carousel carousel-challenge carousel-notice carousel-feed">
+
+                    <div class="item">
+                        <div class="title">
+                            <span>26 Мар 2015 выполнил вызов</span>
+                            <b>Отжаться 1000 раз</b>
+                        </div>
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="target">
+                            <b>И бросил вызов</b>
+                            <ul>
+                                <li>http://vk.com/deone</li>
+                                <li>Василий Теркин</li>
+                                <li>https://vk.com/id72812814</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="title">
+                            <span>26 Мар 2015 выполнил вызов</span>
+                            <b>Отжаться 1000 раз</b>
+                        </div>
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="target">
+                            <b>И бросил вызов</b>
+                            <ul>
+                                <li>http://vk.com/deone</li>
+                                <li>Василий Теркин</li>
+                                <li>https://vk.com/id72812814</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="title">
+                            <span>26 Мар 2015 выполнил вызов</span>
+                            <b>Отжаться 1000 раз</b>
+                        </div>
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 35%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">
+                            <span>26 Мар 2015 выполнил вызов</span>
+                            <b>Отжаться 1000 раз</b>
+                        </div>
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="target">
+                            <b>И бросил вызов</b>
+                            <ul>
+                                <li>http://vk.com/deone</li>
+                                <li>Василий Теркин</li>
+                                <li>https://vk.com/id72812814</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">
+                            <span>26 Мар 2015 выполнил вызов</span>
+                            <b>Отжаться 1000 раз</b>
+                        </div>
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="target">
+                            <b>И бросил вызов</b>
+                            <ul>
+                                <li>http://vk.com/deone</li>
+                                <li>Василий Теркин</li>
+                                <li>https://vk.com/id72812814</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">
+                            <span>26 Мар 2015 выполнил вызов</span>
+                            <b>Отжаться 1000 раз</b>
+                        </div>
+                        <a href="#" class="image">
+                            <img src="img/samples/item-1.jpg" alt="...">
+                        </a>
+                        <div class="timer">
+                            <span class="left">Осталось</span>
+                            <span class="time">00:10:05</span>
+                            <div class="percentage">
+                                <div class="line" style="width: 35%"></div>
+                            </div>
+                            <div class="button-square green">Сохранить изменения</div>
+                        </div>
+                    </div>
+                </div> <!-- carousel -->
+
+            </div>
+
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="logo"></div>
+                <nav>
+                    <a href="#">Конфидециальность</a>
+                    <a href="#">Условия</a>
+                    <a href="#footer" class="md-trigger" data-modal="modal-adv">Реклама в проекте</a>
+                    <div class="lang">
+                        <img class="image" src="img/lang/ru.png" alt="..."><span>Русский</span>
+                    </div>
+                </nav>
+                <div class="banners">
+                    <a href="#"><img src="img/logo-dg.png" alt="..."></a>
+                    <a href="#"><img src="img/logo-redtie.png" alt="..."></a>
+                <div>
+            </div>
+        </footer>
+
+        <!-- Модалы -->
+        <div class="md-modal md-effect-3 md-call-challenge" id="modal-call-to-challenge">
+            <div class="md-content">
+                <h3 class="header-title">Бросить вызов <div class="md-close icon-close"></div></h3>
+                <div class="input">
+                    <input type="text" name="search-challenge" id="search-challenge" placeholder="Поиск по вызовам">
+                </div>
+
+                <p>Выберите один или несколько вызовов пользователю <b>Капитан Америка</b></p>
+
+                <div class="row md-items">
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                </div>
+                <div class="row md-items">
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                    <div class="3u">
+                        <div class="item">
+                        <input type="hidden" class="call-check" name="item_id" value="">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <i class="icon-play"></i>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <span class="name">Название вызова</span>
+                    </div>
+                </div>
+
+                <div class="input submit">
+                    <div class="button-square red">Бросить вызов</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-3" id="modal-adv">
+            <div class="md-content">
+                <h3 class="header-title">Реклама в проекте <div class="md-close icon-close"></div></h3>
+                <p>Есть желание рекламироваться в проекте &mda оставьте заявку! Мы с Вами свяжемся и обсудим возможные варианты</p>
+                <div class="input">
+                    <span class="label">Представьтесь, пожалуйста</span>
+                    <input type="text" name="name">
+                </div>
+                <div class="input">
+                    <span class="label">Укажите номер телефона, чтобы мы перезвонили</span>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="input">
+                    <span class="label">Комментарий</span>
+                    <textarea name="text">
+                    </textarea>
+                </div>
+                <div class="input submit">
+                    <div class="button-square green">Сохранить изменения</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Настройки профиля -->
+
+        <div class="md-modal md-effect-1" id="modal-profile-settings">
+            <div class="md-content">
+                <h3 class="header-title">Настройки профиля <div class="md-close icon-close"></div></h3>
+                <div class="photo-upload">
+                    <div id="button-photo-upload" class="photo" style="background: url(img/samples/avatar.png)">
+                        <div class="overlay">
+                            <i class="fa fa-camera"></i>
+                            <span>Изменить фото</span>
+                        </div>
+                    </div>
+                    <div class="hint">
+                        <span><b>Подсказка: </b>Загружаемый файл не должен превышать размер 5mb, минимальный размер изображения 300х300px</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="name" class="input 6u">
+                        <span class="label">Имя</span>
+                        <input type="text" name="name">
+                    </div>
+                    <div id="surename" class="input 6u">
+                        <span class="label">Фамилия</span>
+                        <input type="text" name="surname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input 4u">
+                        <span class="label">Страна</span>
+                        <input type="text" name="country">
+                    </div>
+                    <div class="input 4u">
+                        <span class="label">Город</span>
+                        <input type="text" name="city">
+                    </div>
+                    <div class="input 1u">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="input 3u">
+                        <span class="label">Дата рождения</span>
+                        <input type="date" name="birth">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input 6u">
+                        <span class="label">E-mail</span>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="input 6u">
+                        <div class="button-square button-email">Подтвердить E-mail</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input 3u">
+                        <span class="label">Старый пароль</span>
+                        <input type="password" name="old-passwd">
+                    </div>
+                    <div class="input 1u">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="input 4u">
+                        <span class="label">Новый пароль</span>
+                        <input type="password" name="new-passwd">
+                    </div>
+                    <div class="1u"></div>
+                    <div class="input 4u">
+                        <span class="label">Повторите новый пароль</span>
+                        <input type="password" name="new-passwd-confirm">
+                    </div>
+                </div>
+                <div class="input submit">
+                    <div class="button-square green">Сохранить изменения</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Создание вызова -->
+
+        <div class="md-modal md-effect-1" id="modal-create">
+            <div class="md-content">
+                <form class="cmxform" id="createChallengeForm" method="post" action="">
+                <h3 class="header-title">Создать вызов <div class="md-close icon-close"></div></h3>
+
+                <div class="row">
+                    <div id="name" class="input 12u">
+                        <span class="label">Заголовок вызова</span>
+                        <input type="text" name="title" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="12u input">
+                        <span class="label">Условия вызова</span>
+                        <textarea name="description"></textarea>
+                    </div>
+                </div>
+
+                <div class="row box">
+                    <div class="5u">
+                        <div class="radio">
+                            <span>Отчет о выполнении</span>
+                            <input id="check-video" type="radio" checked="checked" name="report-type" value="video" required>
+                            <label for="check-video">Видео</label>
+                            <input id="check-photo" type="radio" name="report-type" value="photo">
+                            <label for="check-photo">Фото</label>
+                        </div>
+                        <div class="input">
+                            <span class="label">Ссылка видео с YouTube</span>
+                            <input type="text" name="youtube-link">
+                        </div>
+                        <div class="select input">
+                            <span class="label">Категория</span>
+                            <select>
+                              <option value="1">Спорт и здоровье</option>
+                              <option value="2">Еда и питье</option>
+                              <option value="3">Что-то ещё</option>
+                            </select>
+                        </div>
+                        <div class="select input">
+                            <span class="label">Срок на выполнение</span>
+                            <select>
+                              <option value="1">10 дней</option>
+                              <option value="2">20 дней</option>
+                              <option value="3">1 месяц</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input 1u">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="6u input video-upload">
+                        <div class="youtube-howto">
+                            <span><b>Как вставить ссылку на видео с YouTube:</b> нажмите “Поделиться” - HTML-код и скопируйте выделенные символы как на изображении ниже.</span>
+                            <img src="img/youtube-howto.jpg" class="youtube-howto" alt="...">
+                        </div>
+                        <div class="file">
+                            <span class="or">или</span>
+                            <input type="file" id="upload-media" style="display:none">
+                            <div id="button-video-file" class="button-square green">Выбрать с диска</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="12u">
+                        <h3>Бросить вызов</h3>
+                    </div>
+                </div>
+                <div class="users">
+                    <div class="row user current" data-user-id="1">
+                        <div class="6u">
+                            <span class="label">Участник #1</span>
+                            <input type="text" name="user-1">
+                        </div>
+                        <div class="6u">
+                            <div class="button-square button-delete-user plain-red">Удалить участника</div>
+                        </div>
+                    </div>
+                    <div class="button-square button-add-user plain-green">Добавить участника</div>
+                </div>
+
+                <div class="input submit">
+                    <input type="submit" class="button-square red button-go" value="Бросить вызов">
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Создание вызова -->
+<!-- 
+        <div class="md-modal md-effect-1 md-call-challenge" id="modal-call-to-challenge">
+            <div class="md-content">
+                <div class="container">
+                    <div class="head">
+                        <h3 class="title">Бросить вызов <div class="md-close icon-close"></div></h3>
+                        <div class="input">
+                            <input type="text" name="search" placeholder="Поиск по вызовам">
+                        </div>
+                        <span>Выберите один или несколько вызовов пользователю Капитан Америка</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="3u">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <div class="3u">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <div class="3u">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                        <div class="3u">
+                            <div class="overlay">
+                                <div class="check">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                            </div>
+                            <img src="img/samples/call-pic.jpg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="md-overlay"></div>
+
+        <script src="js/all.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                initCarousel('carousel-notice');
+                initCarousel('carousel-yours');
+                initCarousel('carousel-feed');
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Твой вызов</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Твой Вызов">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="img/fav.png" />
+        <link href="css/all.css" rel="stylesheet">
+        <script src="libs/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+
+
+        <!-- верхнее меню -->
+
+        <header class="menu-top border-bottom" id="menu-top">
+            <div class="container">
+                <div class="logo"></div>
+                <nav class="top-menu">
+                    <a href="#">О проекте</a>
+                    <a href="#">Участники</a>
+                    <a href="#">Вызовы</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Благотворительность</a>
+                </nav>
+                <div class="user-current">
+	                <div class="user-menu">
+	                    <div class="dropdown">
+	                    	<div class="flag"> </div>
+		                    <ul>
+		                        <li><a data-modal="modal-profile-settings" class="md-trigger" href="#">Настройки профиля</a></li>
+		                        <li><a href="#">Выход</a></li>
+		                    </ul>
+	                    </div>
+	                    <div class="avatar" style="background-image:url(img/samples/user.jpg)"> </div>
+	                    <span>Марк Руффало</span>
+	                </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="content the-charity-page" id="charity-page">
+            <div class="container">
+                <header>
+                    <div class="row">
+                        <div class="3u">
+                            <div class="image">
+                                <img src="img/samples/fund1.jpg" />
+                            </div>
+                        </div>
+                        <div class="9u info">
+                            <b class="title">Фонд Билла и Мелинды Гейтс</b>
+                            <span class="where"><i class="icon icon-point"></i>460000, г. Оренбург, ул. Промышленная, д. 11</span>
+                            <span class="phone"><i class="icon icon-phone"></i>+ 7 (3532) 574 382, +7 (908)564 77 22</span>
+                            <span class="website"><i class="icon icon-website"></i>billgates.com</span>
+                            <span class="email"><i class="icon icon-email"></i>charityfund@gates.com</span>
+
+                            <div class="button-square green md-trigger" data-modal="modal-charity-message">Написать сообщение</div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="charity-content">
+                    <div class="row">
+                        <div class="12u">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="12u">
+                            <h3>Вы можете пожертвовать деньги этому фонду:</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="6u details">
+                            <div id="fund-info">
+                            <span>Благотворительный некоммерческий фонд «Жизненный путь»<br></span>
+                            <span>ИНН: 5024104294<br></span>
+                            <span>КПП: 502401001<br></span>
+                            <span>р/с 40703810800000000284<br></span>
+                            <span>в АКБ «РОСЕВРОБАНК» (ОАО)<br></span>
+                            <span>к/с № 30101810800000000777 г.Москва<br></span>
+                            <span>БИК 044585777</span>
+                            </div>
+                            <div class="or">или</div>
+                            <a href="#" class="print" id="printClick">Распечатать или скачать реквизиты</a>
+                        </div>
+                        <div class="6u send-money">
+                            <span>Сделайте перевод с карты или Яндекс.Деньги</span>
+                            <div class="button-square green">Перевести средства</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Карусель вызовов-->
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="logo"></div>
+                <nav>
+                    <a href="#">Конфидециальность</a>
+                    <a href="#">Условия</a>
+                    <a href="#footer" class="md-trigger" data-modal="modal-adv">Реклама в проекте</a>
+                    <div class="lang">
+                        <img class="image" src="img/lang/ru.png" alt="..."><span>Русский</span>
+                    </div>
+                </nav>
+                <div class="banners">
+                    <a href="#"><img src="img/logo-dg.png" alt="..."></a>
+                    <a href="#"><img src="img/logo-redtie.png" alt="..."></a>
+                <div>
+            </div>
+        </footer>
+
+        <!-- Модалы -->
+
+        <div class="md-modal md-effect-3" id="modal-adv">
+            <div class="md-content">
+                <h3 class="header-title">Реклама в проекте <div class="md-close icon-close"></div></h3>
+                <p>Есть желание рекламироваться в проекте - оставьте заявку! Мы с Вами свяжемся и обсудим возможные варианты</p>
+                <div class="input">
+                    <span class="label">Представьтесь, пожалуйста</span>
+                    <input type="text" name="name">
+                </div>
+                <div class="input">
+                    <span class="label">Укажите номер телефона, чтобы мы перезвонили</span>
+                    <input type="tel" name="phone">
+                </div>
+                <div class="input">
+                    <span class="label">Комментарий</span>
+                    <textarea name="text">
+                    </textarea>
+                </div>
+                <div class="input submit">
+                    <div class="button-square green">Сохранить изменения</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Настройки профиля -->
+
+        <div class="md-modal md-effect-1" id="modal-profile-settings">
+            <div class="md-content">
+                <h3 class="header-title">Настройки профиля <div class="md-close icon-close"></div></h3>
+                <div class="photo-upload">
+                    <div id="button-photo-upload" class="photo" style="background: url(img/samples/avatar.png)">
+                        <div class="overlay">
+                            <i class="fa fa-camera"></i>
+                            <span>Изменить фото</span>
+                        </div>
+                    </div>
+                    <div class="hint">
+                        <span><b>Подсказка: </b>Загружаемый файл не должен превышать размер 5mb, минимальный размер изображения 300х300px</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="name" class="input 6u">
+                        <span class="label">Имя</span>
+                        <input type="text" name="name">
+                    </div>
+                    <div id="surename" class="input 6u">
+                        <span class="label">Фамилия</span>
+                        <input type="text" name="surname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input 4u">
+                        <span class="label">Страна</span>
+                        <input type="text" name="country">
+                    </div>
+                    <div class="input 4u">
+                        <span class="label">Город</span>
+                        <input type="text" name="city">
+                    </div>
+                    <div class="input 1u">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="input 3u">
+                        <span class="label">Дата рождения</span>
+                        <input type="date" name="birth">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input 6u">
+                        <span class="label">E-mail</span>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="input 6u">
+                        <div class="button-square button-email">Подтвердить E-mail</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input 3u">
+                        <span class="label">Старый пароль</span>
+                        <input type="password" name="old-passwd">
+                    </div>
+                    <div class="input 1u">
+                        <span>&nbsp;</span>
+                    </div>
+                    <div class="input 4u">
+                        <span class="label">Новый пароль</span>
+                        <input type="password" name="new-passwd">
+                    </div>
+                    <div class="1u"></div>
+                    <div class="input 4u">
+                        <span class="label">Повторите новый пароль</span>
+                        <input type="password" name="new-passwd-confirm">
+                    </div>
+                </div>
+                <div class="input submit">
+                    <div class="button-square green">Сохранить изменения</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Создание вызова -->
+
+        <div class="md-modal md-effect-1" id="modal-charity-message">
+            <div class="md-content">
+                <h3 class="header-title">Написать сообщение <div class="md-close icon-close"></div></h3>
+
+            <form class="cmxform" id="createChallengeForm" method="post" action="">
+            <div class="input 12u">
+                <span class="label">Тема обращения</span>
+                <input type="text" name="name" required>
+            </div>
+            <div class="input 12u">
+                <span class="label">Сообщение</span>
+                <textarea name="message" required></textarea>
+            </div>
+            <div class="input submit">
+                <input type="submit" class="button-square green" value="Отправить сообщение">
+            </div>
+            </form>
+        </div>
+
+        <div class="md-overlay"></div>
+
+        <script src="js/all.js"></script>
+
+    </body>
+</html>
